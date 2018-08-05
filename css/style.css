@@ -619,6 +619,9 @@ input[type="radio"].visually-hidden {
 .categories__item:last-of-type {
     padding-right: 24.5px;
 }
+.categories__item:last-of-type::before {
+    right: 24.5px;
+}
 @media (min-width: 768px) {
     .categories__item:last-of-type {
         padding-right: 67px;
