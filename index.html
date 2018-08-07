@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -301,4 +301,27 @@
         </div>
         <p class="footer__copyright">© 2000-2018 «Уютный двор»</p>
     </footer>
+    <section class="entrance">
+        <form class="entrance__form login-form">
+            <h2 class="login-form__title">Вход</h2>
+            <label class="login-form__label">
+                Эл.почта
+                <input class="login-form__input login-form__input--email" type="email" id="email">
+            </label>
+            <label class="login-form__label">
+                Пароль
+                <input class="login-form__input login-form__input--password" type="password" id="password">
+            </label>
+            <div class="login-form__controls">
+                <button class="login-form__button login-form__button--sign-in button" type="submit">Вход</button>
+                <a class="login-form__button login-form__button--sign-up button" href="#">Регистрация</a>
+            </div>
+            <a class="login-form__link" href="#">
+                Забыли пароль?
+            </a>
+        <button class="entrance__close">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+        </form>
+    </section>
 </body>
