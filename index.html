@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
+    <title>«Уютный Двор»</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -21,28 +21,28 @@
 
                     <ul class="sidebar__menu menu">
                         <li class="menu__item">
-                            <a class="menu__link">Вход / Профиль</a>
+                            <a class="menu__link" href="#">Вход / Профиль</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Магазин</a>
+                            <a class="menu__link" href="#">Магазин</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Портфолио</a>
+                            <a class="menu__link" href="#">Портфолио</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Отзывы</a>
+                            <a class="menu__link" href="#">Отзывы</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Контакты</a>
+                            <a class="menu__link" href="#">Контакты</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Укладка</a>
+                            <a class="menu__link" href="#">Укладка</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Продажа</a>
+                            <a class="menu__link" href="selling.html">Продажа</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link">Технология укладки</a>
+                            <a class="menu__link" href="#">Технология укладки</a>
                         </li>
                     </ul>
                     <a class="sidebar__button button">
@@ -51,7 +51,7 @@
                     </a>
                 </nav>
             </div>
-            <h1 class="header__title">Уютный двор</h1>
+            <span class="header__title">Уютный Двор</span>
             <a class="header__cart" href="#">
                 <span class="visually-hidden">Корзина</span>
             </a>
@@ -85,7 +85,8 @@
             </form>
         </div>
     </header>
-    <main>
+    <main class="page__main main">
+        <h1 class="visually-hidden">«Уютный Двор»</h1>
         <section class="introductory section">
             <h2 class="visually-hidden">Приветствие</h2>
             <p class="introductory__title">Очень крутой магазин</p>
@@ -292,7 +293,7 @@
                     <a class="navigation-list__link" href="#">Укладка</a>
                 </li>
                 <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="#">Продажа</a>
+                    <a class="navigation-list__link" href="selling.html">Продажа</a>
                 </li>
                 <li class="navigation-list__item">
                     <a class="navigation-list__link" href="#">Технология укладки</a>
@@ -301,7 +302,7 @@
         </div>
         <p class="footer__copyright">© 2000-2018 «Уютный двор»</p>
     </footer>
-    <section class="entrance">
+    <section class="entrance visually-hidden">
         <form class="entrance__form login-form">
             <h2 class="login-form__title">Вход</h2>
             <label class="login-form__label">
@@ -319,9 +320,38 @@
             <a class="login-form__link" href="#">
                 Забыли пароль?
             </a>
-        <button class="entrance__close">
-            <span class="visually-hidden">Закрыть</span>
-        </button>
+            <button class="entrance__close">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
         </form>
     </section>
+    <div class="visually-hidden product">
+        <div class="product__card">
+            <div class="product__pictures">
+            <label class="product__photo product__photo--1" for="option--1" aria-label="Первое фото"></label>
+            <input class="visually-hidden product__radio product__radio--1" type="radio" name="option" id="option--1" checked>
+            <label class="product__photo product__photo--2" for="option--2" aria-label="Второе фото"></label>
+            <input class="visually-hidden product__radio product__radio--2" type="radio" name="option" id="option--2">
+            <label class="product__photo product__photo--3" for="option--3" aria-label="Третье фото"></label>
+            <input class="visually-hidden product__radio product__radio--3" type="radio" name="option" id="option--3">
+            <label class="product__photo product__photo--4" for="option--4" aria-label="Четвертое фото"></label>
+            <input class="visually-hidden product__radio product__radio--4" type="radio" name="option" id="option--4">
+            <div class="product__image"></div>
+            </div>
+            <span class="product__title">Название плитки</span>
+            <span class="product__material">Материал плитки</span>
+            <span class="product__producer">Изготовитель:
+                <span class="product__name">Название</span>
+            </span>
+            <span class="product__price">1,200 ₽</span>
+            <div class="product__amount amount">
+                <label class="amount__label amount__label--amount" for="amount">Количество</label>
+                <div class="amount__controls">
+                <button class="amount__button amount__button--less button" type="button" aria-label="Меньше"></button>
+                <input class="amount__input amount__input--amount" id="amount" type="number" value="1">
+                <button class="amount__button amount__button--more button" type="button" aria-label="Больше"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
