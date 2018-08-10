@@ -850,7 +850,8 @@ input[type="radio"].visually-hidden {
     }
 }
 
-.popular__up {
+.popular__up,
+.catalog__up {
     align-self: flex-end;
     display: block;
     box-sizing: border-box;
@@ -1304,17 +1305,18 @@ input[type="radio"].visually-hidden {
     padding: 48px 24px;
     padding-bottom: 36px;
 }
+
 @media (min-width: 768px) {
     .selling {
         padding: 48px 144px;
     }
 }
+
 @media (min-width: 1920px) {
     .selling {
         padding: 48px 595px;
     }
 }
-
 
 .main__title {
     margin: 0;
@@ -1335,6 +1337,7 @@ input[type="radio"].visually-hidden {
     width: 312px;
     margin: 0 auto;
 }
+
 .selling__label {
     font-weight: 600;
     color: #4A285A;
@@ -1383,11 +1386,13 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     padding: 36px 24px;
 }
+
 @media (min-width: 768px) {
     .important {
         padding: 36px 144px;
     }
 }
+
 @media (min-width: 1920px) {
     .important {
         padding: 36px 595px;
@@ -1399,11 +1404,13 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     margin: 0 auto;
 }
+
 @media (min-width: 768px) {
     .section {
         width: 768px;
     }
 }
+
 @media (min-width: 1920px) {
     .section {
         width: 1663px;
@@ -1432,11 +1439,13 @@ input[type="radio"].visually-hidden {
     padding: 56px 24px;
     padding-right: 8px;
 }
+
 @media (min-width: 768px) {
     .partners {
         padding: 56px 64px;
     }
 }
+
 @media (min-width: 1920px) {
     .partners {
         padding: 36px 511px;
@@ -1447,6 +1456,7 @@ input[type="radio"].visually-hidden {
     width: 161px;
     margin-bottom: 20px;
 }
+
 @media (min-width: 768px) {
     .partners__title {
         width: auto;
@@ -1466,6 +1476,7 @@ input[type="radio"].visually-hidden {
     margin-top: 16px;
     margin-right: 16px;
 }
+
 @media (min-width: 768px) {
     .companies__item {
         margin-top: 32px;
@@ -1524,11 +1535,13 @@ input[type="radio"].visually-hidden {
     background-color: #FCFCFC;
     box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
+
 @media (min-width: 768px) {
     .callback {
         padding: 36px 138px;
     }
 }
+
 @media (min-width: 1920px) {
     .callback {
         padding: 36px 595px;
@@ -1550,16 +1563,19 @@ input[type="radio"].visually-hidden {
 .advices {
     padding: 36px 24px;
 }
+
 @media (min-width: 768px) {
     .advices {
         padding: 36px 144px;
     }
 }
+
 @media (min-width: 1920px) {
     .advices {
         padding: 36px 595px;
     }
 }
+
 .advices__title {
     margin: 0;
     margin-bottom: 16px;
@@ -1574,6 +1590,7 @@ input[type="radio"].visually-hidden {
     display: block;
     margin-top: 16px;
 }
+
 @media (min-width: 768px) {
     .advices__paragraph {
         display: inline;
@@ -1589,6 +1606,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     margin-top: 36px;
 }
+
 @media (min-width: 768px) {
     .advices__item {
         margin-top: 48px;
@@ -1603,7 +1621,179 @@ input[type="radio"].visually-hidden {
     text-align: center;
     text-transform: uppercase;
 }
+
 .advices__content {
     text-align: center;
     margin: 0;
+}
+
+.contacts {
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        padding-bottom: 12px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts {
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+.contacts__company {
+    margin: 0 24px;
+    color: #313131;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .contacts__company {
+        margin: 0 65px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts__company {
+        margin: 0 279px;
+    }
+}
+
+.contacts__phone {
+    margin: 0 24px;
+    width: 175px;
+    color: #4A285A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .contacts__phone {
+        margin: 0 65px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts__phone {
+        margin: 0 279px;
+    }
+}
+
+.contacts__address {
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+    .contacts__address {
+        margin: 0 65px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts__address {
+        margin: 0 279px;
+    }
+}
+
+.contacts__row {
+    margin-bottom: 6px;
+}
+
+.contacts__link {
+    margin: 0 24px;
+    color: #4A285A;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    .contacts__link {
+        margin: 0 65px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts__link {
+        margin: 0 279px;
+    }
+}
+
+.contacts__map {
+    margin-top: 40px;
+    height: 222px;
+    background-color: #EFE3D5;
+}
+
+@media (min-width: 768px) {
+    .contacts__map {
+        height: 471px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts__map {
+        margin-right: auto;
+        margin-left: auto;
+        height: 887px;
+        width: 1460px;
+    }
+}
+
+.categories--catalog {
+    padding-bottom: 36px;
+}
+@media (min-width: 1920px) {
+    .categories--catalog {
+        padding-bottom: 60px;
+    }
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 36px;
+}
+@media (min-width: 768px) {
+    .catalog {
+        padding-bottom: 85px;
+    }
+}
+@media (min-width: 1920px) {
+    .catalog {
+        padding-top: 48px;
+    }
+}
+
+.catalog__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.goods-list--catalog {
+    margin-bottom: 30px;
 }
