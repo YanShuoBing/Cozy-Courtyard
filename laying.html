@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Укладка</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="page__header header">
+        <div class="header__main">
+            <input class="visually-hidden header__checkbox header__checkbox--menu" type="checkbox" id="menu">
+            <label class="header__menu" aria-label="Меню" for="menu"></label>
+            <div class="sidebar">
+                <nav class="sidebar__navigation">
+                    <a class="logo-link" href="index.html">
+                        <span class="visually-hidden">Логотип компании «Уютный двор».</span>
+                    </a>
+
+                    <ul class="sidebar__menu menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Вход / Профиль</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link">Укладка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="selling.html">Продажа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Технология укладки</a>
+                        </li>
+                    </ul>
+                    <a class="sidebar__button button">
+                        <span class="sidebar__call">Позвонить</span>
+                        <span class="sidebar__phone-number">8 (863) 2-700-996</span>
+                    </a>
+                </nav>
+            </div>
+            <span class="header__title">Укладка</span>
+            <a class="header__cart" href="#">
+                <span class="visually-hidden">Корзина</span>
+            </a>
+        </div>
+        <div class="header__search search">
+            <input class="search__input" type="search">
+            <label class="search__filter" for="filter">
+                <span class="visually-hidden">Фильтр</span>
+            </label>
+            <input class="visually-hidden header__checkbox header__checkbox--filter" type="checkbox" id="filter">
+            <form class="header__filters filters">
+                <label class="visually-hidden" for="producer">Производитель</label>
+                <select class="filters__select filters__select--producer" id="producer">
+                    <option class="filters__option" value="" selected disabled hidden>Выбрать производителя</option>
+                </select>
+                <label class="visually-hidden" for="material">Материал</label>
+                <select class="filters__select filters__select--material" id="material">
+                    <option class="filters__option" value="" selected disabled hidden>Выбрать материал</option>
+                </select>
+                <div class="filters__fieldset">
+                    <span class="filters__legend">Цена:</span>
+                    <label class="visually-hidden" for="price-from">От</label>
+                    <input class="filters__price filters__price--from" type="text" id="price-from" value="От">
+                    <label class="visually-hidden" for="price-from">До</label>
+                    <input class="filters__price filters__price--to" type="text" id="price-to" value="До">
+                </div>
+                <div class="filters__controls">
+                    <input class=" filters__button filters__button--submit button" type="submit">
+                    <input class="filters__button filters__button--reset button" type="reset">
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="page__main main">
+        <section class="laying section">
+            <h1 class="main__title">Укладка</h1>
+            <p class="laying__text">вибропрессованной тротуарной плитки от 50 м2</p>
+            <form class="laying__form">
+                <label class="laying__label">
+                    Получите индивидуальную скидку
+                    <input class="laying__input" type="tel" placeholder="+7 (XXX) XXX–XX–XX">
+                </label>
+                <button class="laying__submit button" type="submit">Получить скидку</button>
+            </form>
+            <p class="laying__text laying__text--opacity">
+                Услугу по укладке тротуарной плитки мы можем выполнить как из Ваших материалов, так и из наших качественных материалов со
+                скидкой до 15% (в зависимости от объема).
+            </p>
+        </section>
+        <section class="best-worker section">
+            <h2 class="section__title best-worker__title">Лучший укладчик&nbsp;месяца</h2>
+            <div class="best-worker__profile">
+                <img class="best-worker__photo" src="img/best-worker.jpg" width="104px" height="104px">
+                <p class="best-worker__name">Владимир</p>
+                <p class="best-worker__description">Выложил
+                    <span class="best-worker__number">257</span> м2
+                    <span class="best-worker__row">Получил
+                        <span class="best-worker__number">2</span> отзыва</span>
+                </p>
+            </div>
+            <p class="best-worker__text">
+                В компании «Уютный двор» работают опытные, добросовестные, трудолюбивые работники, проверенные годами.
+                <span class="best-worker__paragraph">Все славяне. Никаких гастарбайтеров. Вы можете быть уверены, что все работы будут выполнены оперативно, с
+                    соблюдением технологии, с высоким качеством.</span>
+            </p>
+        </section>
+        <section class="calculation section">
+            <h2 class="section__title calculation__title">Расчитать стоимость работ по фотографии</h2>
+            <p class="calculation__text">На фотографии должна быть полностью видна площадь участка подукладку тротуарной плитку, а также подъезд к площадке.
+                Вы можете загрузить несколько фотографий.</p>
+            <a class="calculation__button button" href="#">Загрузить файл</a>
+        </section>
+        <section class="advantages section">
+            <h2 class="section__title advantages__title">Наши преимущества</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item advantages__item--economy">
+                    <p class="advantages__subtitle">Цена</p>
+                    <p class="advantages__text">
+                        Наша цена за работу в Ростове-на-Дону легко вписывается даже в скромный бюджет, материал представлен огромным разнообразием,
+                        а готовое покрытие отличается прочностью и прекрасно сочетается с любыми элементами окружающей инфраструктуры.
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--warranty">
+                    <p class="advantages__subtitle">Гарантия</p>
+                    <p class="advantages__text">
+                        Гарантия на выполненные работы 36 месяцев!
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--quality">
+                    <p class="advantages__subtitle">Высокое качество</p>
+                    <p class="advantages__text">
+                        Благодаря многолетнему опыту работы, компания «Уютный двор» гарантирует высочайшее качество работ и использование только
+                        качественных строительных материалов.
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--solid">
+                    <p class="advantages__subtitle">Комплексное благоустройство</p>
+                    <p class="advantages__text">
+                        Мы понимаем, что благоустройство двора - это ответственное мероприятие, и большинство клиентов хотят, чтобы выполненное покрытие
+                        служило как можно дольше. Важно не ошибиться в выборе компании, которая выполнит полный комплекс
+                        работ.
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--experience">
+                    <p class="advantages__subtitle">Наш опыт</p>
+                    <p class="advantages__text">
+                        Наши постоянные Заказчики точно знают, что хотят иметь дело именно с нами
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--proff">
+                    <p class="advantages__subtitle">Профес<span class="advantages__word-wrap">-
+                        
+                    </span>сиональный подход к делу</p>
+                    <p class="advantages__text">
+                        Профессиональный подход к делу, пунктуальность и оперативное решение вопросов, связанных с приобретением и доставкой всех
+                        необходимых материалов
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="options section">
+            <h2 class="section__title options__title">Варианты укладки тратуарной плитки</h2>
+            <ul class="options__list">
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-1.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-2.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-3.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-4.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-5.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-6.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-7.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-8.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-9.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-10.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-11.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-12.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-13.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-14.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-15.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-16.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-17.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-18.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-19.jpg" width="148" height="151">
+                </li>
+                <li class="options__item">
+                    <img class="options__image" src="img/laying-20.jpg" width="148" height="151">
+                </li>
+            </ul>
+            <p class="options__text">
+                С другими рисунками укладки вы можете ознакомиться в разделе
+                <a class="options__link options__link--inline"
+                    href="#">Портфолио</a>.
+            </p>
+            <a class="options__button button" href="#">Получить консультацию</a>
+            <a class="options__link options__link--block" href="#">Ознакомиться с нашей технологией укладки</a>
+        </section>
+        <section class="certificate section">
+            <h2 class="section__title certificate__title">Сертификат</h2>
+            <p class="certificate__text">
+                После сдачи качественно выполненных работ, Заказчику выдаётся гарантийный сертификат, который подтверждает гарантию 36 месяцев на выполненные работы.
+            </p>
+            <img class="certificate__image" src="img/certificate.jpg" width="201" height="281">
+            <p class="certificate__text">Обладателю сертификата пожизненная скидка 10% на выполнение работ и на стоимость тротуарной плитки.</p>
+        </section>
+    </main>
+    <footer class="page__footer footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <p class="footer__company">«Уютный Двор» Ростов-на-Дону</p>
+                <ul class="footer__socials socials-list">
+                    <li class="socials-list__item">
+                        <a class="socials-list__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--ok" href="#">
+                            <span class="visually-hidden">Одноклассники</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--fb" href="#">
+                            <span class="visually-hidden">Фейсбук</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--ig" href="#">
+                            <span class="visually-hidden">Инстаграм</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer__column contacts-list">
+                <li class="contacts-list__item">8(863)2-700-996</li>
+                <li class="contacts-list__item">info@удрнд.рф</li>
+                <li class="contacts-list__item">Ростовская область, Мясниковский район, х.Ленинаван, ул. Ленина 1и</li>
+            </ul>
+            <ul class="footer__column navigation-list">
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="catalog.html">Магазин</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Портфолио</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Отзывы</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="contacts.html">Контакты</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link">Укладка</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="selling.html">Продажа</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Технология укладки</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer__copyright">© 2000-2018 «Уютный двор»</p>
+    </footer>
+    <section class="entrance visually-hidden">
+        <form class="entrance__form login-form">
+            <h2 class="login-form__title">Вход</h2>
+            <label class="login-form__label">
+                Эл.почта
+                <input class="login-form__input login-form__input--email" type="email" id="email">
+            </label>
+            <label class="login-form__label">
+                Пароль
+                <input class="login-form__input login-form__input--password" type="password" id="password">
+            </label>
+            <div class="login-form__controls">
+                <button class="login-form__button login-form__button--sign-in button" type="submit">Вход</button>
+                <a class="login-form__button login-form__button--sign-up button" href="#">Регистрация</a>
+            </div>
+            <a class="login-form__link" href="#">
+                Забыли пароль?
+            </a>
+            <button class="entrance__close">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </form>
+    </section>
