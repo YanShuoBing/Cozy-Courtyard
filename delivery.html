@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Доставка</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="page__header header">
+        <div class="header__main">
+            <input class="visually-hidden header__checkbox header__checkbox--menu" type="checkbox" id="menu">
+            <label class="header__menu" aria-label="Меню" for="menu"></label>
+            <div class="sidebar">
+                <nav class="sidebar__navigation">
+                    <a class="logo-link">
+                        <span class="visually-hidden">Логотип компании «Уютный двор».</span>
+                    </a>
+
+                    <ul class="sidebar__menu menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Вход / Профиль</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="laying.html">Укладка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="selling.html">Продажа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Технология укладки</a>
+                        </li>
+                    </ul>
+                    <a class="sidebar__button button">
+                        <span class="sidebar__call">Позвонить</span>
+                        <span class="sidebar__phone-number">8 (863) 2-700-996</span>
+                    </a>
+                </nav>
+            </div>
+            <span class="header__title">Корзина</span>
+            <a class="header__back" href="#">
+                <span class="visually-hidden">Назад</span>
+            </a>
+        </div>
+        <div class="header__search search">
+            <input class="search__input" type="search">
+            <label class="search__filter" for="filter">
+                <span class="visually-hidden">Фильтр</span>
+            </label>
+            <input class="visually-hidden header__checkbox header__checkbox--filter" type="checkbox" id="filter">
+            <form class="header__filters filters">
+                <label class="visually-hidden" for="producer">Производитель</label>
+                <select class="filters__select filters__select--producer" id="producer">
+                    <option class="filters__option" value="" selected disabled hidden>Выбрать производителя</option>
+                </select>
+                <label class="visually-hidden" for="material">Материал</label>
+                <select class="filters__select filters__select--material" id="material">
+                    <option class="filters__option" value="" selected disabled hidden>Выбрать материал</option>
+                </select>
+                <div class="filters__fieldset">
+                    <span class="filters__legend">Цена:</span>
+                    <label class="visually-hidden" for="price-from">От</label>
+                    <input class="filters__price filters__price--from" type="text" id="price-from" value="От">
+                    <label class="visually-hidden" for="price-from">До</label>
+                    <input class="filters__price filters__price--to" type="text" id="price-to" value="До">
+                </div>
+                <div class="filters__controls">
+                    <input class=" filters__button filters__button--submit button" type="submit">
+                    <input class="filters__button filters__button--reset button" type="reset">
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="page__main main">
+        <h1 class="visually-hidden">Доставка</h1>
+        <form class="delivery">
+            <section class="delivery__section order">
+                <h2 class="delivery__title">Заказ # 359384</h2>
+                <input class="order__input visually-hidden" type="radio" name="order" id="self">
+                <label class="order__label" for="self">самовывоз
+                    <span class="order__row">бесплатно</span>
+                </label>
+                <input class="order__input visually-hidden" type="radio" name="order" id="city">
+                <label class="order__label" for="city">доставка в пределах города
+                    <span class="order__row">+300 рублей</span>
+                </label>
+                <input class="order__input visually-hidden" type="radio" name="order" id="tk">
+                <label class="order__label" for="tk">доставка через ТК
+                    <span class="order__row">+1,500 рублей</span>
+                </label>
+            </section>
+            <section class="delivery__section address">
+                <h2 class="delivery__title">Адрес доставки</h2>
+                <p class="address__text">
+                    <span class="address__row">Российская Федерация</span>
+                    <span class="address__row">Ороговая область</span>
+                    <span class="address__row">Село Ухтыж</span>
+                    <span class="address__row">Дом 12, кв. 6</span>
+                    <span class="address__row">Индекс: 1238218312</span>
+                </p>
+                <button class="address__button button">Изменить адрес</button>
+            </section>
+            <section class="delivery__section payment">
+                <h2 class="delivery__title">Способ оплаты</h2>
+                <input class="payment__input visually-hidden" type="radio" name="payment" id="cash">
+                <label class="payment__label" for="cash">Наличными при самовывозе</label>
+                <input class="payment__input visually-hidden" type="radio" name="payment" id="card">
+                <label class="payment__label" for="card">Банковская карта VISA / MASTER</label>
+                <input class="payment__input visually-hidden" type="radio" name="payment" id="qiwi">
+                <label class="payment__label" for="qiwi">QIWI Кошелёк</label>
+                <input class="payment__input visually-hidden" type="radio" name="payment" id="yandex">
+                <label class="payment__label" for="yandex">Яндекс Деньги</label>
+            </section>
+            <section class="delivery__section card">
+                <h2 class="delivery__title">Платёжные данные</h2>
+                <label class="card__label card__label--number">Номер карты
+                    <input class="card__input" type="text">
+                </label>
+                <label class="card__label card__label--exp-date">Exp.Date
+                    <input class="card__input" type="text">
+                </label>
+                <label class="card__label card__label--ccv">CCV
+                    <input class="card__input" type="text">
+                </label>
+                <button class="card__submit button" type="submit">Оплатить</button>
+            </section>
+        </form>
+    </main>
+    <footer class="page__footer footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <p class="footer__company">«Уютный Двор» Ростов-на-Дону</p>
+                <ul class="footer__socials socials-list">
+                    <li class="socials-list__item">
+                        <a class="socials-list__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--ok" href="#">
+                            <span class="visually-hidden">Одноклассники</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--fb" href="#">
+                            <span class="visually-hidden">Фейсбук</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a class="socials-list__link socials-list__link--ig" href="#">
+                            <span class="visually-hidden">Инстаграм</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer__column contacts-list">
+                <li class="contacts-list__item">8(863)2-700-996</li>
+                <li class="contacts-list__item">info@удрнд.рф</li>
+                <li class="contacts-list__item">Ростовская область, Мясниковский район, х.Ленинаван, ул. Ленина 1и</li>
+            </ul>
+            <ul class="footer__column navigation-list">
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="catalog.html">Магазин</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Портфолио</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Отзывы</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="contacts.html">Контакты</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="laying.html">Укладка</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="selling.html">Продажа</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#">Технология укладки</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer__copyright">© 2000-2018 «Уютный двор»</p>
+    </footer>
+    <section class="entrance visually-hidden">
+        <form class="entrance__form login-form">
+            <h2 class="login-form__title">Вход</h2>
+            <label class="login-form__label">
+                Эл.почта
+                <input class="login-form__input login-form__input--email" type="email" id="email">
+            </label>
+            <label class="login-form__label">
+                Пароль
+                <input class="login-form__input login-form__input--password" type="password" id="password">
+            </label>
+            <div class="login-form__controls">
+                <button class="login-form__button login-form__button--sign-in button" type="submit">Вход</button>
+                <a class="login-form__button login-form__button--sign-up button" href="#">Регистрация</a>
+            </div>
+            <a class="login-form__link" href="#">
+                Забыли пароль?
+            </a>
+            <button class="entrance__close">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </form>
+    </section>
+</body>
