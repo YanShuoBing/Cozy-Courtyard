@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
-    <header class="page__header header">
+    <header class="page__header header" id="header">
         <div class="header__main">
             <input class="visually-hidden header__checkbox header__checkbox--menu" type="checkbox" id="menu">
             <label class="header__menu" aria-label="Меню" for="menu"></label>
@@ -21,16 +21,16 @@
 
                     <ul class="sidebar__menu menu">
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Вход / Профиль</a>
+                            <a class="menu__link" href="entrance.html">Вход / Профиль</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="catalog.html">Магазин</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Портфолио</a>
+                            <a class="menu__link" href="portfolio.html">Портфолио</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Отзывы</a>
+                            <a class="menu__link" href="feedback.html">Отзывы</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="contacts.html">Контакты</a>
@@ -42,7 +42,7 @@
                             <a class="menu__link" href="selling.html">Продажа</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Технология укладки</a>
+                            <a class="menu__link" href="technology.html">Технология укладки</a>
                         </li>
                     </ul>
                     <a class="sidebar__button button">
@@ -52,7 +52,7 @@
                 </nav>
             </div>
             <span class="header__title">Уютный Двор</span>
-            <a class="header__cart" href="#">
+            <a class="header__cart" href="cart.html">
                 <span class="visually-hidden">Корзина</span>
             </a>
         </div>
@@ -257,7 +257,7 @@
                     </div>
                 </li>
             </ul>
-            <a class="popular__up" href="">
+            <a class="popular__up" href="#header">
                 <span class="visually-hidden">Наверх</span>
             </a>
         </section>
@@ -299,10 +299,10 @@
                     <a class="navigation-list__link" href="catalog.html">Магазин</a>
                 </li>
                 <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="#">Портфолио</a>
+                    <a class="navigation-list__link" href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="#">Отзывы</a>
+                    <a class="navigation-list__link" href="feedback.html">Отзывы</a>
                 </li>
                 <li class="navigation-list__item">
                     <a class="navigation-list__link" href="contacts.html">Контакты</a>
@@ -314,7 +314,7 @@
                     <a class="navigation-list__link" href="selling.html">Продажа</a>
                 </li>
                 <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="#">Технология укладки</a>
+                    <a class="navigation-list__link" href="technology.html">Технология укладки</a>
                 </li>
             </ul>
         </div>
@@ -327,9 +327,10 @@
                 Эл.почта
                 <input class="login-form__input login-form__input--email" type="email" id="email">
             </label>
-            <label class="login-form__label">
+            <label class="login-form__label login-form__label">
                 Пароль
                 <input class="login-form__input login-form__input--password" type="password" id="password">
+                <button class="login-form__visibility" type="button"><span class="visually-hidden">Сделать пароль видимым</span></button>
             </label>
             <div class="login-form__controls">
                 <button class="login-form__button login-form__button--sign-in button" type="submit">Вход</button>
@@ -343,7 +344,7 @@
             </button>
         </form>
     </section>
-    <div class="product">
+    <div class="product visually-hidden">
         <div class="product__card">
             <div class="product__pictures">
                 <label class="product__photo product__photo--1" for="option--1" aria-label="Первое фото"></label>
@@ -370,11 +371,12 @@
                         <button class="counter__button counter__button--more" type="button">+</button>
                     </div>
             </div>
-            <p class="product__total">Всего: <span class="product__span">4,500</span> ₽</p>
+            <p class="product__total">Всего: <span class="product__span">1,200</span> ₽</p>
             <div class="product__controls">
                 <button class="product__button product__button--cart button">В корзину</button>
                 <button class="product__button product__button--instant button">Купить сразу</button>
             </div>
+            <a class="product__close" href="#"><span class="visually-hidden">Закрыть</span></a>
         </div>
     </div>
 </body>
