@@ -599,9 +599,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: flex-start;
+        -ms-flex-pack: flex-start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -635,6 +635,7 @@ input[type="radio"].visually-hidden {
 
 .introductory__title {
     margin: 0;
+    margin-top: 36px;
     margin-bottom: 8px;
     font-weight: 600;
     font-size: 24px;
@@ -643,8 +644,15 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
     .introductory__title {
+        margin-top: 100px;
         font-size: 36px;
         line-height: 43px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .introductory__title {
+        margin-top: 125px;
     }
 }
 
@@ -842,6 +850,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 100%;
     margin: 0;
     margin-right: 8.5px;
     margin-bottom: 82.5px;
