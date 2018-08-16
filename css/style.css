@@ -96,22 +96,20 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 60px;
-    padding-right: 24.5px;
-    padding-left: 24.5px;
+    width: 312px;
+    height: 60px;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .header__main {
-        padding-right: 67px;
-        padding-left: 67px;
+        width: 640px;
     }
 }
 
 @media (min-width: 1920px) {
     .header__main {
-        padding-right: 280px;
-        padding-left: 280px;
+        width: 1131px;
     }
 }
 
@@ -317,7 +315,14 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+    text-align: center;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .header__title {
+        width: 580px;
+    }
 }
 
 .header__cart {
@@ -354,6 +359,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search__input {
+    box-sizing: border-box;
     width: 264px;
     height: 32px;
     padding: 5px 10px;

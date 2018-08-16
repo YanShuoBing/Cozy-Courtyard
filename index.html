@@ -330,7 +330,9 @@
             <label class="login-form__label login-form__label">
                 Пароль
                 <input class="login-form__input login-form__input--password" type="password" id="password">
-                <button class="login-form__visibility" type="button"><span class="visually-hidden">Сделать пароль видимым</span></button>
+                <button class="login-form__visibility" type="button">
+                    <span class="visually-hidden">Сделать пароль видимым</span>
+                </button>
             </label>
             <div class="login-form__controls">
                 <button class="login-form__button login-form__button--sign-in button" type="submit">Вход</button>
@@ -366,17 +368,20 @@
             <div class="product__amount amount">
                 <p class="amount__title">Количество:</p>
                 <div class="amount__count counter">
-                        <button class="counter__button counter__button--less" type="button">-</button>
-                        <p class="counter__amount">1</p>
-                        <button class="counter__button counter__button--more" type="button">+</button>
-                    </div>
+                    <button class="counter__button counter__button--less" type="button">-</button>
+                    <p class="counter__amount">1</p>
+                    <button class="counter__button counter__button--more" type="button">+</button>
+                </div>
             </div>
-            <p class="product__total">Всего: <span class="product__span">1,200</span> ₽</p>
+            <p class="product__total">Всего:
+                <span class="product__span">1,200</span> ₽</p>
             <div class="product__controls">
                 <button class="product__button product__button--cart button">В корзину</button>
                 <button class="product__button product__button--instant button">Купить сразу</button>
             </div>
-            <a class="product__close" href="#"><span class="visually-hidden">Закрыть</span></a>
+            <a class="product__close" href="#">
+                <span class="visually-hidden">Закрыть</span>
+            </a>
         </div>
     </div>
 </body>
