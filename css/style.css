@@ -893,6 +893,10 @@ input[type="radio"].visually-hidden {
     }
 }
 
+.goods-card__link {
+    text-decoration: none;
+}
+
 .goods-card__image {
     width: 144px;
 }
